@@ -1,4 +1,7 @@
-##  Read in data
+##  Read in data from working directory
+##  Data can be downloaded as a .zip file from: 
+##  https://class.coursera.org/exdata-012/human_grading/view/courses/973506/assessments/3/submissions
+##  Should be unzipped into local working directory
 x <- read.csv2("household_power_consumption.txt", header = TRUE, 
                colClasses = "character", na.strings = c("?"))
 x$date2 <- as.Date(strptime(x$Date, "%d/%m/%Y"))
